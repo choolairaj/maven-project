@@ -1,4 +1,5 @@
-pipeline (
+pipeline {
+    agent any
     tools {
         maven 'localMaven'
     }
@@ -7,6 +8,6 @@ pipeline (
             steps {
                 sh 'mvn clean package'
             }
+            }
+        }
     }
-}
-) 
