@@ -1,4 +1,4 @@
-pipeline {
+pipeline(
     agent any
     tools {
         maven 'localMaven'
@@ -10,4 +10,4 @@ pipeline {
             }
     }
 }
-)
+) 
